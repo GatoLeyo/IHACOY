@@ -1,6 +1,7 @@
 package net.gatoleyo.ihacoy;
 
 import com.mojang.logging.LogUtils;
+import net.gatoleyo.ihacoy.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,8 @@ public class ihacoy {
 
     public ihacoy() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
