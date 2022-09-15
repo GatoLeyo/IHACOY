@@ -14,7 +14,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ihacoy.MOD_ID);
 
     public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).fireResistant()));
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.IHACOY_TAB).fireResistant()));
 
 
     public static void register (IEventBus eventBus){
